@@ -107,7 +107,8 @@ final class CollectionDataProvider implements ContextAwareCollectionDataProvider
 
         $documents = $this->client->search([
             'index' => $documentMetadata->getIndex(),
-            'type' => $documentMetadata->getType(),
+            // @ COREMOD
+            //'type' => $documentMetadata->getType(),
             'body' => $body,
         ]);
 
